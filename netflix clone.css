@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.main {
+    background-image: url("https://dkr0pu7ej5xex.cloudfront.net/wp-content/uploads/2017/04/24135159/Netflix-Background.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75vw;
+    margin: auto;
+    height: 80px;
+    padding-top: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+nav img {
+    width: 150px;
+}
+
+nav select,
+.btn-red-sm {
+    padding: 8px 15px;
+    margin-left: 15px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.hero {
+    position: relative;
+    z-index: 2;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.hero span {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.hero span:first-child {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-buttons input {
+    padding: 15px;
+    font-size: 16px;
+    width: 300px;
+    border: none;
+    outline: none;
+}
+
+.hero-buttons .red-btn {
+    background-color: red;
+    color: white;
+    padding: 15px 25px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.seperation,
+.separation {
+    height: 7px;
+    background-color: rgb(51, 51, 51);
+}
+
+/* Sections */
+section.first {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 10%;
+    gap: 30px;
+    background-color: black;
+}
+
+.first span:first-child {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.first span:last-child {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.sec-img {
+    position: relative;
+    max-width: 500px;
+}
+
+.sec-img img {
+    width: 100%;
+    z-index: 1;
+}
+
+.sec-img video {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    width: 75%;
+    z-index: 0;
+}
+
+/* FAQ Section */
+.faq {
+    background-color: black;
+    padding: 60px 10%;
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq-box li {
+    list-style: none;
+    background-color: #2d2d2d;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.faq-box li:hover {
+    background-color: #414141;
+}
+
+.hero.end {
+    margin-top: 40px;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: #aaa;
+    padding: 40px 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer span a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-item a {
+    color: #aaa;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.final {
+    margin-top: 20px;
+}
+
+.last-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 8px;
+    border-radius: 4px;
+}
